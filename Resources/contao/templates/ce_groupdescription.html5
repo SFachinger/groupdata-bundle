@@ -1,0 +1,10 @@
+<?php $this->extend('block_searchable'); ?>
+<?php $this->block('content'); ?>
+<div class='ce_text drop-cap block'>
+<?php if ($this->description): ?>
+	<?php echo $this->description; ?>
+<?php endif; ?>
+</div>
+
+<?php $this->endblock(); ?>
+

@@ -1,0 +1,74 @@
+<?php $this->extend('block_searchable'); ?>
+<?php $this->block('content'); ?>
+
+<?php if ($this->headline): ?>
+	<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<div class='groupdata_class'>
+
+		<h4><strong>Ansprechpartner: </strong></h4><br>
+		<?php echo $this->group_leader; ?><br>
+
+			<?php if ($this->group_phone): ?>
+			<?php endif; ?>
+				Telefon: <?php echo $this->group_phone; ?><br>
+			
+			<?php if ($this->group_mobile): ?>
+				Mobil: <?php echo $this->group_mobile; ?><br>
+			<?php endif; ?>
+
+
+		Email:{{email_open::<?= $this->group_email ?>}} <?php echo $this->group_name; ?>{{link_close}}
+		
+		<h4><strong>Treffen: </strong></h4>
+
+			<?php if ($this->group_meeting_mo != ''): ?>
+						Jeden Montag<br>
+						von <?php echo $this->group_meeting_mo; ?> Uhr.<br>
+						
+			<?php endif; ?>
+			<?php if ($this->group_meeting_di != ''): ?>
+						Jeden Dienstag<br>
+						von <?php echo $this->group_meeting_di; ?> Uhr.</br>
+						
+			<?php endif; ?>
+			<?php if ($this->group_meeting_mi != ''): ?>
+						Jeden Mittwoch <br>
+						von <?php echo $this->group_meeting_mi; ?> Uhr.<br>
+						
+			<?php endif; ?>
+
+			<?php if ($this->group_meeting_do != ''): ?>
+						Jeden Donnerstag<br>
+						von <?php echo $this->group_meeting_do; ?> Uhr.<br>
+						
+			<?php endif; ?>
+
+			<?php if ($this->group_meeting_fr != ''): ?>
+						Jeden Freitag<br>
+						von <?php echo $this->group_meeting_fr; ?> Uhr.<br>
+						
+			<?php endif; ?>
+			<?php if ($this->group_meeting_sa != ''): ?>
+						Jeden Samstag<br>
+						von <?php echo $this->group_meeting_sa; ?> Uhr.<br>
+						
+			<?php endif; ?>
+			<?php if ($this->group_meeting_so != ''): ?>
+						Jeden Sonntag<br>
+						von <?php echo $this->group_meeting_so; ?> Uhr.<br>
+						
+			<?php endif; ?>
+		
+		<br><br>
+		<strong>Treffpunkt: </strong>
+		<br>	
+			<?php echo $this->group_meetingpoint; ?><br>
+			<?php echo $this->group_street; ?><br>
+			<?php echo $this->group_zip; ?> <?php echo $this->group_city; ?><br>
+			
+</div>
+
+<?php $this->endblock(); ?>
+
