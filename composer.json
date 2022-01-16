@@ -1,0 +1,38 @@
+{
+    "name": "sfachinger/groupdata-bundle",
+    "type": "contao-bundle",
+    "description": "Skeleton for custom Contao 4 bundles von Steffen Fachinger",
+    "homepage": "https://contao.org",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Steffen Fachinger",
+            "homepage": "https://github.com/sfachinger"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "contao/core-bundle": "^4.4",
+        "symfony/config": "^4.4 || ^5.1",
+        "symfony/dependency-injection": "^4.4 || ^5.1",
+        "symfony/http-kernel": "^4.4 || ^5.1"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "SFachinger\\GroupdataBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "SFachinger\\GroupdataBundle\\": "src/"
+        }
+    }
+    "support": {
+        "issues": "https://github.com/sfachinger/GroupdataBundle/issues",
+        "source": "https://github.com/sfachinger/GroupdataBundle/issues"
+    }
+}
