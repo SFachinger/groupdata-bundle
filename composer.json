@@ -30,7 +30,7 @@
         "psr-4": {
             "SFachinger\\GroupdataBundle\\": "src/"
         }
-    }
+    },
     "support": {
         "issues": "https://github.com/sfachinger/GroupdataBundle/issues",
         "source": "https://github.com/sfachinger/GroupdataBundle/issues"
